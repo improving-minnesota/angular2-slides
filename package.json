@@ -1,0 +1,40 @@
+{
+  "name": "angular2-slides",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "git@github.com:objectpartners/angular2-slides.git",
+  "author": "Dustin Schau <dustinschau@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "del-cli \"dist/**/*\"",
+    "build": "webpack --env.production",
+    "predeploy": "npm run build",
+    "deploy": "ghpages --path dist",
+    "start": "webpack-dev-server --env.development --hot --inline --progress --port 8080 --content-base ./src/public "
+  },
+  "devDependencies": {
+    "@types/node": "~7.0.12",
+    "@types/webpack-env": "~1.13.0",
+    "del-cli": "~0.2.1",
+    "ghpages": "~0.0.10",
+    "object-partners-presentation": "github:dschau/object-partners-presentation",
+    "object-partners-revealjs-theme": "github:dschau/object-partners-revealjs-theme",
+    "webpack": "~2.3.3",
+    "webpack-dev-server": "~2.4.2"
+  },
+  "dependencies": {
+    "@angular/common": "~4.0.1",
+    "@angular/compiler": "~4.0.1",
+    "@angular/core": "~4.0.1",
+    "@angular/http": "~4.0.1",
+    "@angular/platform-browser": "~4.0.1",
+    "@angular/platform-browser-dynamic": "~4.0.1",
+    "@angular/router": "~4.0.1",
+    "core-js": "~2.4.1",
+    "highlight.js": "~9.10.0",
+    "reflect-metadata": "~0.1.10",
+    "reveal.js": "~3.4.1",
+    "rxjs": "~5.3.0",
+    "zone.js": "~0.8.5"
+  }
+}
