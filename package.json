@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "repository": "git@github.com:objectpartners/angular2-slides.git",
-  "author": "Dustin Schau <dustinschau@gmail.com>",
+  "author": "Jon DeJong",
+  "contributors": [
+    "Dustin Schau <dustin.schau@objectpartners.com>"
+  ],
   "license": "MIT",
   "scripts": {
     "prebuild": "del-cli \"dist/**/*\"",
