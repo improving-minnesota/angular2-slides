@@ -1,12 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import 'reveal.js/lib/js/classList.js';
-import 'reveal.js/lib/js/head.min.js';
-import 'reveal.js/lib/js/html5shiv.js';
-import * as Reveal from 'reveal.js';
 import 'reveal.js/css/reveal.css';
 import 'object-partners-revealjs-theme';
-import * as highlight from 'highlight.js';
 import 'highlight.js/styles/monokai.css';
 
 @Component({
@@ -20,8 +15,19 @@ export class SlideDeckComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // hack-y hack-y hack
-    setTimeout(() => {
+    require.ensure([
+      'reveal.js',
+      'reveal.js/lib/js/classList.js',
+      'reveal.js/lib/js/head.min.js',
+      'reveal.js/lib/js/html5shiv.js',
+      'highlight.js'
+    ], () => {
+      const Reveal = require('reveal.js');
+      require('reveal.js/lib/js/classList.js');
+      require('reveal.js/lib/js/head.min.js');
+      require('reveal.js/lib/js/html5shiv.js');
+      const highlight = require('highlight.js');
+
       Reveal.initialize({
         history: true,
         dependencies: [
@@ -34,6 +40,6 @@ export class SlideDeckComponent implements OnInit {
           }
         ]
       });
-    }, 1);
+    });
   }
 }
