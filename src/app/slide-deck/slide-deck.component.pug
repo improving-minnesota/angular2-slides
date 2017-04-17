@@ -1,4 +1,4 @@
 .reveal
   .slides
     section(*ngFor="let slideDeck of slides;")
-      section(*ngFor="let slide of slideDeck", [innerHTML]="slide")
+      section(*ngFor="let slide of slideDeck", [innerHTML]="slide | sanitizeHtml")
