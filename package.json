@@ -5,6 +5,7 @@
   "repository": "git@github.com:objectpartners/angular2-slides.git",
   "author": "Jon DeJong",
   "contributors": [
+    "Michael Cacek <michael.cacek@objectpartners.com",
     "Dustin Schau <dustin.schau@objectpartners.com>"
   ],
   "license": "MIT",
@@ -20,8 +21,8 @@
     "@types/webpack-env": "~1.13.0",
     "del-cli": "~0.2.1",
     "ghpages": "~0.0.10",
-    "object-partners-presentation": "github:dschau/object-partners-presentation",
-    "object-partners-revealjs-theme": "github:dschau/object-partners-revealjs-theme",
+    "object-partners-presentation": "github:objectpartners/object-partners-presentation-config",
+    "object-partners-revealjs-theme": "github:objectpartners/object-partners-revealjs-theme",
     "webpack": "~2.3.3",
     "webpack-dev-server": "~2.4.2"
   },
