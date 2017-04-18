@@ -14,7 +14,7 @@
     "build": "webpack --env.production",
     "predeploy": "npm run build",
     "deploy": "ghpages --path dist",
-    "start": "webpack-dev-server --env.development --inline --progress --port 8080 --content-base ./src/public "
+    "start": "webpack-dev-server --env.development --inline --progress --port 9999 --content-base ./src/public "
   },
   "devDependencies": {
     "@angular/cli": "~1.0.0",
