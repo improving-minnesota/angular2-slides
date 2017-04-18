@@ -45,7 +45,7 @@ const slides: any[][] = context.keys()
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.pug',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   slides: any[][] = slides;

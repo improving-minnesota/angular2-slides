@@ -7,7 +7,7 @@ import 'highlight.js/styles/monokai.css';
 @Component({
   selector: 'opi-slide-deck',
   templateUrl: './slide-deck.component.pug',
-  styleUrls: ['./slide-deck.component.css']
+  styleUrls: ['./slide-deck.component.scss']
 })
 export class SlideDeckComponent implements OnInit {
   @Input() slides: any[][];
