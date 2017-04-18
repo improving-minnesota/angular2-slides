@@ -15,9 +15,9 @@ export class DisplayDateComponent implements OnDestroy, OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.now = new Date().getTime();
+    this.now = Date.now();
     this.interval = setInterval(() => {
-      this.now = new Date().getTime();
+      this.now = Date.now();
     }, 1000);
   }
 
