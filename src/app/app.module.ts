@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
 import { SlideDeckComponent } from './slide-deck/slide-deck.component';
+import { DisplayDateComponent } from './shared/components/';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,10 @@ import { SlideDeckComponent } from './slide-deck/slide-deck.component';
     DynamicHTMLModule
       .forRoot({
         components: [
+          {
+            component: DisplayDateComponent,
+            selector: 'opi-display-date'
+          }
         ]
       })
   ],

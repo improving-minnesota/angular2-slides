@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { SanitizeHtml } from './pipes/sanitize-html.pipe';
+import { DisplayDateComponent } from './components/';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    SanitizeHtml
+    DisplayDateComponent
   ],
   exports: [
-    SanitizeHtml
+    DisplayDateComponent
   ]
 })
 export class SharedModule { }
