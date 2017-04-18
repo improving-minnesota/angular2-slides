@@ -17,12 +17,12 @@
     "start": "webpack-dev-server --env.development --hot --inline --progress --port 8080 --content-base ./src/public "
   },
   "devDependencies": {
+    "@angular/cli": "~1.0.0",
     "@types/node": "~7.0.12",
     "@types/webpack-env": "~1.13.0",
     "del-cli": "~0.2.1",
     "ghpages": "~0.0.10",
     "object-partners-presentation": "github:objectpartners/object-partners-presentation-config",
-    "object-partners-revealjs-theme": "github:objectpartners/object-partners-revealjs-theme",
     "webpack": "~2.3.3",
     "webpack-dev-server": "~2.4.2"
   },
