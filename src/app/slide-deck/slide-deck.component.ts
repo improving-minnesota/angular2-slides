@@ -10,7 +10,8 @@ import 'highlight.js/styles/monokai.css';
   styleUrls: ['./slide-deck.component.scss']
 })
 export class SlideDeckComponent implements OnInit {
-  @Input() slides: any[][];
+  @Input()
+  slides: any[][];
 
   constructor() { }
 

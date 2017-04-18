@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
+import { DynamicHTMLModule } from 'ng-dynamic';
+
 import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
@@ -15,7 +17,12 @@ import { SlideDeckComponent } from './slide-deck/slide-deck.component';
   imports: [
     BrowserModule,
     HttpModule,
-    SharedModule
+    SharedModule,
+    DynamicHTMLModule
+      .forRoot({
+        components: [
+        ]
+      })
   ],
   providers: [],
   bootstrap: [AppComponent]
