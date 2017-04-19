@@ -7,7 +7,7 @@ const slides: any[][] = context.keys()
     const getSortObject = (name: string) => {
       const [ , folderName, fileName ] = name.split('/');
       return {
-        folder: parseInt(folderName.split('-').pop(), 10),
+        folder: parseInt(folderName.split('-').shift(), 10),
         file: parseInt(fileName.split('.').shift(), 10),
         fileName
       };
@@ -34,18 +34,18 @@ const slides: any[][] = context.keys()
   })
   .reduce((newSlides: any[][], key: string) => {
     const [ , folderName ] = key.split('/');
-    const group = parseInt(folderName.split('-').pop(), 10) - 1;
-    if ( !newSlides[group] ) {
-      newSlides[group] = [];
+    const index = parseInt(folderName.split('-').shift(), 10);
+    if ( !newSlides[index] ) {
+      newSlides[index] = [];
     }
-    newSlides[group].push(context(key));
+    newSlides[index].push(context(key));
     return newSlides;
   }, []);
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.pug',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   slides: any[][] = slides;
