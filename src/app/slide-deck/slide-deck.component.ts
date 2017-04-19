@@ -31,7 +31,7 @@ export class SlideDeckComponent implements OnInit {
 
       Reveal.initialize({
         history: true,
-        margin: 0.25,
+        margin: 0.15,
         dependencies: [
           {
             src: '',
