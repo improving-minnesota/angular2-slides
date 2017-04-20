@@ -1,9 +1,9 @@
 <div id="observable-area" #observableArea>
-  <span class="container" [ngSwitch]="!!(position.x && position.y)">
-    <span *ngSwitchCase="true">
+  <div class="container" [ngSwitch]="!!(position.x && position.y)">
+    <span class="position" *ngSwitchCase="true">
       <span>X: {{position.x}}</span>
       <span>Y: {{position.y}}</span>
     </span>
     <span *ngSwitchDefault>Mouse over me</span>
-  </span>
+  </div>
 </div>

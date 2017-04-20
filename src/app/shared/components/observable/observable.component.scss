@@ -5,10 +5,12 @@ $observable-bg-color: mix(white, red, 25%);
   width: 50vh;
   background: linear-gradient(to bottom, $observable-bg-color, red);
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
   .container {
     margin: 0;
     color: white;
-    line-height: 50vh;
     text-align: center;
+    line-height: 50vh;
   }
 }

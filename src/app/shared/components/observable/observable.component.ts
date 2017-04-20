@@ -19,12 +19,13 @@ export class ObservableComponent implements OnInit, OnDestroy {
   constructor() {}
 
   ngOnInit() {
-    const el = this.observableArea.nativeElement;
+    const el: Element = this.observableArea.nativeElement;
     this.mouseOver$ = Observable.fromEvent(el, 'mousemove')
       .subscribe((ev: MouseEvent) => {
+        const pos = el.getBoundingClientRect();
         this.position = {
-          x: ev.pageX,
-          y: ev.pageY
+          x: Math.round(ev.pageX - pos.left),
+          y: Math.round(ev.pageY - pos.top)
         };
       });
 
