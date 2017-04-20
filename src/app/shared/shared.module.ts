@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { DisplayDateComponent } from './components/';
+import { DisplayDateComponent, ObservableComponent } from './components/';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    DisplayDateComponent
+    DisplayDateComponent,
+    ObservableComponent
   ],
   exports: [
-    DisplayDateComponent
+    DisplayDateComponent,
+    ObservableComponent
   ]
 })
 export class SharedModule { }

@@ -8,7 +8,10 @@ import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
 import { SlideDeckComponent } from './slide-deck/slide-deck.component';
-import { DisplayDateComponent } from './shared/components/';
+import {
+  DisplayDateComponent,
+  ObservableComponent
+} from './shared/components/';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,10 @@ import { DisplayDateComponent } from './shared/components/';
           {
             component: DisplayDateComponent,
             selector: 'opi-display-date'
+          },
+          {
+            component: ObservableComponent,
+            selector: 'opi-observable'
           }
         ]
       })
