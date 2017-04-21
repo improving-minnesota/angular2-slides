@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import {
   ButtonComponent,
   DisplayDateComponent,
+  DogListComponent,
   ObservableComponent,
   UpperLowerComponent
 } from './components/';
@@ -13,16 +14,18 @@ import {
     CommonModule
   ],
   declarations: [
+    ButtonComponent,    
     DisplayDateComponent,
+    DogListComponent,
     ObservableComponent,
-    UpperLowerComponent,
-    ButtonComponent
+    UpperLowerComponent
   ],
   exports: [
+    ButtonComponent,    
     DisplayDateComponent,
+    DogListComponent,
     ObservableComponent,
-    UpperLowerComponent,
-    ButtonComponent
+    UpperLowerComponent
   ]
 })
 export class SharedModule { }

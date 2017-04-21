@@ -1,12 +1,16 @@
-## Component
+import { Component, OnInit } from '@angular/core';
 
-The Component Class
+import { Dog } from './dog';
 
-```typescript
-import { OnInit } from '@angular/core';
-
+@Component({
+  selector: 'opi-dog-list',
+  templateUrl: './dog-list.component.html',
+  styleUrls: ['./dog-list.component.scss']
+})
 export class DogListComponent implements OnInit {
   dogs: Dog[];
+  constructor() { }
+
   ngOnInit() {
     this.dogs = [
       new Dog({ name: 'Bear', breed: 'Collie', age: 4 }),
@@ -14,5 +18,5 @@ export class DogListComponent implements OnInit {
       new Dog({ name: 'Cosmos', breed: 'Bulldog', age: 8 })
     ];
   }
+
 }
-```
