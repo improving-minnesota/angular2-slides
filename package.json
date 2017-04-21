@@ -37,7 +37,7 @@
     "core-js": "~2.4.1",
     "highlight.js": "~9.10.0",
     "ng-dynamic": "~3.0.0",
-    "object-partners-revealjs-theme": "github:objectpartners/object-partners-revealjs-theme",
+    "object-partners-revealjs-theme": "github:objectpartners/object-partners-revealjs-theme#1.0.0",
     "reflect-metadata": "~0.1.10",
     "reveal.js": "~3.4.1",
     "rxjs": "~5.3.0",
