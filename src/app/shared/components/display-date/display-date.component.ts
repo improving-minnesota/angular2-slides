@@ -7,12 +7,16 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 })
 export class DisplayDateComponent implements OnDestroy, OnInit {
   @Input()
-  public format: string = 'short';
+  public format: string = 'medium';
 
   private now: number;
   private interval: any;
 
   constructor() {}
+
+  setFormat(format: string) {
+    this.format = format;
+  }
 
   ngOnInit() {
     this.now = Date.now();

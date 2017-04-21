@@ -66,17 +66,17 @@
   optionalDependencies:
     node-sass "^4.3.0"
 
-"@angular/common@~4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@angular/common/-/common-4.0.1.tgz#df488eada842b2d841ded750712292b18387b5b0"
+"@angular/common@~4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-4.0.2.tgz#092b272f193d3ac9549b53792657e48e96f39f5d"
 
 "@angular/compiler@~4.0.1":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-4.0.1.tgz#15721edb148167a2d83b6f9324817e658eac8280"
 
-"@angular/core@~4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.0.1.tgz#0b110a001012076ea696460ccd922707bcdf51ba"
+"@angular/core@~4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.0.2.tgz#195153f8623b59f07c30b3b8954e14842c3959c3"
 
 "@angular/http@~4.0.1":
   version "4.0.1"
@@ -86,9 +86,9 @@
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-4.0.1.tgz#fd5debb2d3f6474350965e71c2674e2170d7cfcb"
 
-"@angular/platform-browser@~4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-4.0.1.tgz#4b9efbeb2fbb900de188743b988802d3aa2b33ff"
+"@angular/platform-browser@~4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-4.0.2.tgz#bce01526917a5b49606fc7e81600af85b15846ea"
 
 "@angular/router@~4.0.1":
   version "4.0.1"

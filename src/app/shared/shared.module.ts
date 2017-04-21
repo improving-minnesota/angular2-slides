@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { DisplayDateComponent, ObservableComponent } from './components/';
+import {
+  ButtonComponent,
+  DisplayDateComponent,
+  ObservableComponent,
+  UpperLowerComponent
+} from './components/';
 
 @NgModule({
   imports: [
@@ -9,11 +14,15 @@ import { DisplayDateComponent, ObservableComponent } from './components/';
   ],
   declarations: [
     DisplayDateComponent,
-    ObservableComponent
+    ObservableComponent,
+    UpperLowerComponent,
+    ButtonComponent
   ],
   exports: [
     DisplayDateComponent,
-    ObservableComponent
+    ObservableComponent,
+    UpperLowerComponent,
+    ButtonComponent
   ]
 })
 export class SharedModule { }
