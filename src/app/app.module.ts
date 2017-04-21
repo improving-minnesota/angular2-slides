@@ -10,7 +10,8 @@ import { AppComponent } from './app.component';
 import { SlideDeckComponent } from './slide-deck/slide-deck.component';
 import {
   DisplayDateComponent,
-  ObservableComponent
+  ObservableComponent,
+  UpperLowerComponent
 } from './shared/components/';
 
 @NgModule({
@@ -32,6 +33,10 @@ import {
           {
             component: ObservableComponent,
             selector: 'opi-observable'
+          },
+          {
+            component: UpperLowerComponent,
+            selector: 'opi-upper-lower'
           }
         ]
       })
