@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { SlideDeckComponent } from './slide-deck/slide-deck.component';
 import {
   DisplayDateComponent,
+  DogListComponent,
   ObservableComponent,
   UpperLowerComponent
 } from './shared/components/';
@@ -29,6 +30,10 @@ import {
           {
             component: DisplayDateComponent,
             selector: 'opi-display-date'
+          },
+          {
+            component: DogListComponent,
+            selector: 'opi-dog-list'
           },
           {
             component: ObservableComponent,
