@@ -3086,6 +3086,10 @@ object-component@0.0.3:
     url-loader "~0.5.8"
     webpack "~2.2.1"
 
+object-partners-revealjs-theme@ObjectPartners/object-partners-revealjs-theme#1.0.1:
+  version "1.0.1"
+  resolved "https://codeload.github.com/ObjectPartners/object-partners-revealjs-theme/tar.gz/08d01d076521834ed307e3700ca0ba9776f19153"
+
 "object-partners-revealjs-theme@github:objectpartners/object-partners-revealjs-theme#1.0.0":
   version "1.0.0"
   resolved "https://codeload.github.com/objectpartners/object-partners-revealjs-theme/tar.gz/979663a25891f84b967e9c4ab5400d522ff88cb0"
