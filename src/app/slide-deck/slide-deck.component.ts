@@ -37,15 +37,15 @@ export class SlideDeckComponent implements OnInit {
         dependencies: [
           {
             async: true,
-            src: require('../../../node_modules/reveal.js/plugin/zoom-js/zoom.js')
+            src: require('reveal.js/plugin/zoom-js/zoom.js')
           },
           {
             async: true,
-            src: require('../../../node_modules/reveal.js/plugin/markdown/marked.js')
+            src: require('reveal.js/plugin/markdown/marked.js')
           },
           {
             async: true,
-            src: require('../../../node_modules/reveal.js/plugin/notes/notes.js')
+            src: require('reveal.js/plugin/notes/notes.js')
           }
         ]
       });
