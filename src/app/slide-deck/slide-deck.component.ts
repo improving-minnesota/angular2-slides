@@ -4,6 +4,7 @@ import 'reveal.js/css/reveal.css';
 import 'object-partners-revealjs-theme';
 import 'highlight.js/styles/monokai.css';
 
+
 @Component({
   selector: 'opi-slide-deck',
   templateUrl: './slide-deck.component.pug',
@@ -27,18 +28,24 @@ export class SlideDeckComponent implements OnInit {
       require('reveal.js/lib/js/classList.js');
       require('reveal.js/lib/js/head.min.js');
       require('reveal.js/lib/js/html5shiv.js');
-      const highlight = require('highlight.js');
+
+      (window as any).Reveal = Reveal;
 
       Reveal.initialize({
         history: true,
         margin: 0.20,
         dependencies: [
           {
-            src: '',
             async: true,
-            callback() {
-              highlight.initHighlightingOnLoad();
-            }
+            src: require('../../../node_modules/reveal.js/plugin/zoom-js/zoom.js')
+          },
+          {
+            async: true,
+            src: require('../../../node_modules/reveal.js/plugin/markdown/marked.js')
+          },
+          {
+            async: true,
+            src: require('../../../node_modules/reveal.js/plugin/notes/notes.js')
           }
         ]
       });

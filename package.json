@@ -14,7 +14,7 @@
     "build": "webpack --env.production",
     "predeploy": "npm run build",
     "deploy": "ghpages --path dist",
-    "start": "webpack-dev-server --env.development --inline --progress --port 9999 --content-base ./src/public "
+    "start": "webpack-dev-server --env.development --inline --progress --port 9999 --content-base ./src/public --content-base ./"
   },
   "devDependencies": {
     "@angular/cli": "~1.0.0",
@@ -22,7 +22,7 @@
     "@types/webpack-env": "~1.13.0",
     "del-cli": "~0.2.1",
     "ghpages": "~0.0.10",
-    "object-partners-presentation": "github:objectpartners/object-partners-presentation-config",
+    "object-partners-presentation": "github:objectpartners/object-partners-presentation-config#1.0.0",
     "webpack": "~2.3.3",
     "webpack-dev-server": "~2.4.2"
   },
@@ -37,7 +37,7 @@
     "core-js": "~2.4.1",
     "highlight.js": "~9.10.0",
     "ng-dynamic": "~3.0.0",
-    "object-partners-revealjs-theme": "github:objectpartners/object-partners-revealjs-theme#1.0.0",
+    "object-partners-revealjs-theme": "ObjectPartners/object-partners-revealjs-theme#1.0.1",
     "reflect-metadata": "~0.1.10",
     "reveal.js": "~3.4.1",
     "rxjs": "~5.3.0",

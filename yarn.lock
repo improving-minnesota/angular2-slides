@@ -3057,9 +3057,9 @@ object-component@0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/object-component/-/object-component-0.0.3.tgz#f0c69aa50efc95b866c186f400a33769cb2f1291"
 
-"object-partners-presentation@github:objectpartners/object-partners-presentation-config":
+object-partners-presentation@ObjectPartners/object-partners-presentation-config#1.0.0, "object-partners-presentation@github:objectpartners/object-partners-presentation-config":
   version "1.0.0"
-  resolved "https://codeload.github.com/objectpartners/object-partners-presentation-config/tar.gz/eec69c3ddf5f1e694f57f2912cf3ddc57c53af89"
+  resolved "https://codeload.github.com/ObjectPartners/object-partners-presentation-config/tar.gz/78ef93b05de5864f766bfcc3358949149fc864cc"
   dependencies:
     angular2-template-loader "~0.6.2"
     autoprefixer "~6.7.6"
@@ -3086,9 +3086,9 @@ object-component@0.0.3:
     url-loader "~0.5.8"
     webpack "~2.2.1"
 
-"object-partners-revealjs-theme@github:objectpartners/object-partners-revealjs-theme#1.0.0":
-  version "1.0.0"
-  resolved "https://codeload.github.com/objectpartners/object-partners-revealjs-theme/tar.gz/979663a25891f84b967e9c4ab5400d522ff88cb0"
+object-partners-revealjs-theme@ObjectPartners/object-partners-revealjs-theme#1.0.1:
+  version "1.0.1"
+  resolved "https://codeload.github.com/ObjectPartners/object-partners-revealjs-theme/tar.gz/08d01d076521834ed307e3700ca0ba9776f19153"
 
 object.omit@^2.0.0:
   version "2.0.1"
