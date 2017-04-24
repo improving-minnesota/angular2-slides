@@ -20,10 +20,12 @@
     "@angular/cli": "~1.0.0",
     "@types/node": "~7.0.12",
     "@types/webpack-env": "~1.13.0",
+    "copy-webpack-plugin": "~4.0.1",
     "del-cli": "~0.2.1",
     "ghpages": "~0.0.10",
-    "object-partners-presentation": "github:objectpartners/object-partners-presentation-config#1.0.0",
+    "object-partners-presentation": "ObjectPartners/object-partners-presentation-config#1.0.0",
     "webpack": "~2.3.3",
+    "webpack-copy-plugin": "~0.0.4",
     "webpack-dev-server": "~2.4.2"
   },
   "dependencies": {
