@@ -1,9 +1,17 @@
+# Set cache environment and node version
 machine:
   environment:
     PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
   node:
-    version: 6.9.1
+    version: 7.6.0
 
+# Only build master
+general:
+  branches:
+    only:
+      - master
+
+# Use yarn
 dependencies:
   override:
     - yarn
@@ -14,6 +22,7 @@ test:
   override:
     - yarn test
 
+# deploy when tag with release-* is pushed
 deployment:
   release:
     tag: /release-.*/
