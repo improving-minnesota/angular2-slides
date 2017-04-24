@@ -13,6 +13,10 @@ const configFn = getWebpackConfig({
     new CopyWebpackPlugin([
       {
         from: path.join(__dirname, 'node_modules/reveal.js/plugin/notes/*')
+      },
+      {
+        context: path.join(__dirname, 'src'),
+        from: path.join('.*')
       }
     ])
   ]
