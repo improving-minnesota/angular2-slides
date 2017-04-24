@@ -14,7 +14,8 @@
     "build": "webpack --env.production",
     "predeploy": "npm run build",
     "deploy": "ghpages --path dist",
-    "start": "webpack-dev-server --env.development --inline --progress --port 9999 --content-base ./src/public --content-base ./"
+    "start": "webpack-dev-server --env.development --inline --progress --port 9999 --content-base ./src/public --content-base ./",
+    "test": "echo \"We should probably write some tests huh\""
   },
   "devDependencies": {
     "@angular/cli": "~1.0.0",
