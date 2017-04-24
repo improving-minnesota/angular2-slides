@@ -17,7 +17,6 @@ test:
 deployment:
   release:
     tag: /release-.*/
-    owner: circleci
     commands:
       - yarn
       - yarn deploy
