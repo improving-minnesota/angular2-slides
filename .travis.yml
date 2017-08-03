@@ -10,8 +10,6 @@ after_success:
 
 deploy:
   provider: pages
-  script:
-    - yarn deploy
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: dist
