@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - stable
+cache:
+  yarn: true
+
+script: yarn test
+after_success:
+  - yarn build
+
+deploy:
+  provider: pages
+  script:
+    - yarn deploy
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  on:
+    tags: true
+  
