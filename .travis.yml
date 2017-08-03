@@ -4,10 +4,12 @@ node_js:
 cache:
   yarn: true
 
+script: npm test
+after_success:
+  - yarn deploy
+
 deploy:
   provider: pages
-  script:
-    - yarn deploy
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   on:
