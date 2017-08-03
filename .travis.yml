@@ -1,5 +1,16 @@
 language: node_js
 node_js:
-  - "7"
+  - stable
 cache:
   yarn: true
+
+deploy:
+  provider: pages
+  script:
+    - yarn deploy
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  on:
+    tags: true
+  
