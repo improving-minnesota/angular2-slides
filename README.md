@@ -1,5 +1,7 @@
 # angular-slides
 
+[![Build Status](https://travis-ci.org/objectpartners/angular2-slides.svg?branch=master)](https://travis-ci.org/objectpartners/angular2-slides)
+
 The slides for the accompanying [workshop][workshop].
 
 ## Set up
