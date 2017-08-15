@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent {
-  constructor() { }
+  constructor() {}
 }

@@ -5,9 +5,8 @@ cache:
   yarn: true
 
 script: yarn test
-after_success:
-  - yarn build
 
+before_deploy: yarn build
 deploy:
   provider: pages
   skip_cleanup: true

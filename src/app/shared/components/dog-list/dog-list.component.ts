@@ -9,7 +9,7 @@ import { Dog } from './dog';
 })
 export class DogListComponent implements OnInit {
   dogs: Dog[];
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.dogs = [
@@ -18,5 +18,4 @@ export class DogListComponent implements OnInit {
       new Dog({ name: 'Cosmo', breed: 'Bulldog', age: 8 })
     ];
   }
-
 }

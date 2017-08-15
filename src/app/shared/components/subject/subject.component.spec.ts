@@ -1,21 +1,21 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UpperLowerComponent } from './upper-lower.component';
+import { SubjectComponent } from './subject.component';
 
-describe('UpperLowerComponent', () => {
-  let component: UpperLowerComponent;
-  let fixture: ComponentFixture<UpperLowerComponent>;
+describe('SubjectComponent', () => {
+  let component: SubjectComponent;
+  let fixture: ComponentFixture<SubjectComponent>;
 
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
-        declarations: [UpperLowerComponent]
+        declarations: [SubjectComponent]
       }).compileComponents();
     })
   );
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UpperLowerComponent);
+    fixture = TestBed.createComponent(SubjectComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

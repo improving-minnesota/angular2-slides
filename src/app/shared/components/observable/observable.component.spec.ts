@@ -6,12 +6,13 @@ describe('Observable', () => {
   let component: ObservableComponent;
   let fixture: ComponentFixture<ObservableComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ObservableComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [ObservableComponent]
+      }).compileComponents();
     })
-    .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ObservableComponent);

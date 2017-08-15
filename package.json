@@ -12,19 +12,25 @@
   "scripts": {
     "prebuild": "del-cli \"dist/**/*\"",
     "build": "webpack --env.production",
+    "precommit": "lint-staged",
     "predeploy": "npm run build",
+    "format": "prettier \"src/**/*.ts\" --write --single-quote --parser typescript",
     "deploy": "ghpages --path dist",
     "start": "webpack-dev-server --env.development --inline --progress --port 9999 --content-base ./src/public --content-base ./",
     "test": "echo \"We should probably write some tests huh\""
   },
   "devDependencies": {
     "@angular/cli": "~1.0.0",
+    "@types/jasmine": "^2.5.53",
     "@types/node": "~7.0.12",
     "@types/webpack-env": "~1.13.0",
     "copy-webpack-plugin": "~4.0.1",
     "del-cli": "~0.2.1",
     "ghpages": "~0.0.10",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.3",
     "object-partners-presentation": "github:objectpartners/object-partners-presentation-config#1.0.0",
+    "prettier": "^1.5.3",
     "webpack": "~2.3.3",
     "webpack-copy-plugin": "~0.0.4",
     "webpack-dev-server": "~2.4.2"
@@ -45,5 +51,11 @@
     "reveal.js": "~3.4.1",
     "rxjs": "~5.3.0",
     "zone.js": "~0.8.5"
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "npm run format",
+      "git add"
+    ]
   }
 }

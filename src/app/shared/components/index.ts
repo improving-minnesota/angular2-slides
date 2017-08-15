@@ -1,5 +1,6 @@
-export { ButtonComponent } from './button/button.component';
-export { DisplayDateComponent } from './display-date/display-date.component';
-export { DogListComponent } from './dog-list/dog-list.component';
-export { ObservableComponent } from './observable/observable.component';
-export { UpperLowerComponent } from './upper-lower/upper-lower.component';
+export * from './button/button.component';
+export * from './display-date/display-date.component';
+export * from './dog-list/dog-list.component';
+export * from './observable/observable.component';
+export * from './subject/subject.component';
+export * from './upper-lower/upper-lower.component';
