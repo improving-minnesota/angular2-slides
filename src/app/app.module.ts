@@ -16,37 +16,33 @@ import {
 } from './shared/components/';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SlideDeckComponent
-  ],
+  declarations: [AppComponent, SlideDeckComponent],
   imports: [
     BrowserModule,
     HttpModule,
     SharedModule,
-    DynamicHTMLModule
-      .forRoot({
-        components: [
-          {
-            component: DisplayDateComponent,
-            selector: 'opi-display-date'
-          },
-          {
-            component: DogListComponent,
-            selector: 'opi-dog-list'
-          },
-          {
-            component: ObservableComponent,
-            selector: 'opi-observable'
-          },
-          {
-            component: UpperLowerComponent,
-            selector: 'opi-upper-lower'
-          }
-        ]
-      })
+    DynamicHTMLModule.forRoot({
+      components: [
+        {
+          component: DisplayDateComponent,
+          selector: 'opi-display-date'
+        },
+        {
+          component: DogListComponent,
+          selector: 'opi-dog-list'
+        },
+        {
+          component: ObservableComponent,
+          selector: 'opi-observable'
+        },
+        {
+          component: UpperLowerComponent,
+          selector: 'opi-upper-lower'
+        }
+      ]
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

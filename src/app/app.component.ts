@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 
 const context = require.context('../slides', true, /\.md|markdown$/);
 
-const slides: any[][] = context.keys()
+const slides: any[][] = context
+  .keys()
   .sort((a: string, b: string) => {
     const getSortObject = (name: string) => {
-      const [ , folderName, fileName ] = name.split('/');
+      const [, folderName, fileName] = name.split('/');
       return {
         folder: parseInt(folderName.split('-').shift(), 10),
         file: parseInt(fileName.split('.').shift(), 10),
@@ -18,13 +19,15 @@ const slides: any[][] = context.keys()
 
     const folderDiff = aSort.folder - bSort.folder;
 
-    if ( folderDiff === 0 ) {
+    if (folderDiff === 0) {
       const fileDiff = aSort.file - bSort.file;
-      if ( fileDiff === 0 ) {
+      if (fileDiff === 0) {
         const aSplit = aSort.fileName.split('-');
         const bSplit = bSort.fileName.split('-');
-        if ( aSplit.length === 1 || bSplit.length === 1 ) {
-          return aSplit.length === 1 && bSplit.length === 1 ? 0 : aSplit.length - bSplit.length;
+        if (aSplit.length === 1 || bSplit.length === 1) {
+          return aSplit.length === 1 && bSplit.length === 1
+            ? 0
+            : aSplit.length - bSplit.length;
         }
         return aSort.fileName.localeCompare(bSort.fileName);
       }
@@ -33,9 +36,9 @@ const slides: any[][] = context.keys()
     return folderDiff;
   })
   .reduce((newSlides: any[][], key: string) => {
-    const [ , folderName ] = key.split('/');
+    const [, folderName] = key.split('/');
     const index = parseInt(folderName.split('-').shift(), 10);
-    if ( !newSlides[index] ) {
+    if (!newSlides[index]) {
       newSlides[index] = [];
     }
     newSlides[index].push(context(key));

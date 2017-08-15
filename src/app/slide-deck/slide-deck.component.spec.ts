@@ -6,12 +6,13 @@ describe('SlideDeckComponent', () => {
   let component: SlideDeckComponent;
   let fixture: ComponentFixture<SlideDeckComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ SlideDeckComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [SlideDeckComponent]
+      }).compileComponents();
     })
-    .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(SlideDeckComponent);

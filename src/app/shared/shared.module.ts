@@ -6,26 +6,27 @@ import {
   DisplayDateComponent,
   DogListComponent,
   ObservableComponent,
+  SubjectComponent,
   UpperLowerComponent
 } from './components/';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   declarations: [
-    ButtonComponent,    
+    ButtonComponent,
     DisplayDateComponent,
     DogListComponent,
     ObservableComponent,
+    SubjectComponent,
     UpperLowerComponent
   ],
   exports: [
-    ButtonComponent,    
+    ButtonComponent,
     DisplayDateComponent,
     DogListComponent,
     ObservableComponent,
+    SubjectComponent,
     UpperLowerComponent
   ]
 })
-export class SharedModule { }
+export class SharedModule {}

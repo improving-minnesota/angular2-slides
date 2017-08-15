@@ -6,12 +6,13 @@ describe('DisplayDateComponent', () => {
   let component: DisplayDateComponent;
   let fixture: ComponentFixture<DisplayDateComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ DisplayDateComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [DisplayDateComponent]
+      }).compileComponents();
     })
-    .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(DisplayDateComponent);

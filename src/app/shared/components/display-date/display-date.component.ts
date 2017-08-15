@@ -6,8 +6,7 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
   styleUrls: ['./display-date.component.scss']
 })
 export class DisplayDateComponent implements OnDestroy, OnInit {
-  @Input()
-  public format: string = 'medium';
+  @Input() public format: string = 'medium';
 
   private now: number;
   private interval: any;
